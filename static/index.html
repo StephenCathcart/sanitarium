@@ -1,0 +1,271 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  <title>Sanitarium</title>
+  <meta name="description" content="A dead simple, killer API">
+  <meta name="author" content="Stephen Cathcart">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Sanitarium.io">
+  <!-- <meta property="og:image" content="link_to_image"> -->
+  <meta property="og:description" content="A dead simple, killer API">
+  
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600">
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/jsonTree.css" />
+  <link rel="stylesheet" href="/css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+      <section class="header" id="particles-js">
+        <!-- <div id="wraps"> -->
+          <h2 class="title">Sanitarium.io</h2>
+          <h2 class="title">a dead simple, killer API</h2>
+          <h6><code class="stage">alpha</code></h6>
+        <!-- </div> -->
+      </section>
+
+      <div class="navbar-spacer"></div>
+      <nav id="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#usage">API Usage</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#" data-popover="#codeNavPopover">More</a>
+              <div id="codeNavPopover" class="popover">
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-link" href="#policy">Policy</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="#privacy">Privacy</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="#legal">Legal</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+       <!-- What is Sanitarium.io -->
+      <div class="docs-section" id="intro">
+        <h6 class="docs-header">What is Sanitarium.io?</h6>
+        <p>
+            Welcome to Sanitarium.io, a facility for holding the criminally insane. 
+            Our archive exposes a JSON API, enabling you to query hand-curated 
+            data on horror movie antagonists.
+        </p>
+        <p>
+            Patient records contain an in-depth profile and previous criminal activity, 
+            including a list of known victims. Our facility basement is used to 
+            house our aquatic killers.
+        </p>
+
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://sanitarium.us20.list-manage.com/subscribe/post?u=1f3d0870fefa3e231ec56cdf8&amp;id=ec75a75ceb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <label for="mce-EMAIL">Subscribe to the mailing list</label>
+              <div class="row">
+                <div class="eight columns">
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                </div>
+                <div class="four columns">
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1f3d0870fefa3e231ec56cdf8_ec75a75ceb" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End Mailchimp Signup Form -->
+      </div>
+
+      <!-- Usage -->
+      <div class="docs-section" id="usage">
+          <h6 class="docs-header">API Usage</h6>
+
+          <p>
+            This is a <strong>consumption-only</strong> API - only the HTTP <code>GET</code> method is 
+            available on resources. No authentication is required.
+          </p>
+          
+          <p>Retrieve a random killer in JSON format.</p>
+  
+          <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+          <div class="row">
+            <div class="eight columns">
+                <pre class="code-example"><code class="code-example-body">GET https://api.sanitarium.io/killers/random</code></pre>
+            </div>
+            <div class="four columns">
+              <button type="submit" id="btn-get" class="button button-primary">Get</button>
+            </div>
+          </div>
+
+          <p>Example response:</p>
+
+          <div id="get-response"></div>
+           <!-- ————————————————————————————————————————————————————— --> 
+  
+          <div class="docs-example">
+            <table class="u-full-width">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Path</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>GET</code></td>
+                  <td>/killers/random</td>
+                  <td>Find random killer.</td>
+                </tr>
+                <tr>
+                  <td><code>GET</code></td>
+                  <td>/killers/{~slug}</td>
+                  <td>Find killer by slug, note the tilde-prefix (~).</td>
+                </tr>
+                <tr>
+                    <td><code>GET</code></td>
+                    <td>/classifications</td>
+                    <td>List all killer classifications.</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <p>
+            Query parameters are all <em>optional</em> and may be appended to the <code>/killers/random</code> 
+            endpoint, to influence the response.
+          </p>
+  
+          <!-- QUERY PARAMETER CODE EXAMPLE ———————————————————————————————————————— -->
+          <pre class="code-example"><code class="code-example-body">GET https://api.sanitarium.io/killers/random?weapon=teeth&residence=maine</code></pre>
+          <!-- ————————————————————————————————————————————————————— -->
+  
+          <div class="docs-example">
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>name</code></td>
+                    <td>string</td>
+                    <td>Fuzzy search on both killers name and known aliases.</td>
+                  </tr>
+                  <tr>
+                    <td><code>classification</code></td>
+                    <td>string</td>
+                    <td>Fuzzy search on killers classification.</td>
+                  </tr>
+                  <tr>
+                    <td><code>residence</code></td>
+                    <td>string</td>
+                    <td>Fuzzy search on killers primary residence.</td>
+                  </tr>
+                  <tr>
+                    <td><code>weapon</code></td>
+                    <td>string</td>
+                    <td>Fuzzy search on killers primary weapon of choice.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+  
+      <!-- Policy -->
+      <div class="docs-section" id="policy">
+        <h6 class="docs-header">Fair Use Policy</h6>
+        <p>
+            Sanitarium.io is free and open to use. It is also popular. Because of this, we 
+            ask every developer to abide by our fair use policy. People not complying with 
+            the fair use policy will have their IP address permanently banned.
+        </p>
+        <p>
+            We will not tolerate denial of service attacks.
+        </p>
+        <p>Rules:</p>
+        <ul>
+            <li>You can make up to <strong>200 requests</strong> per hour.</li>
+            <li>Locally cache resources whenever you request them.</li>
+            <li>Use the correct user-agent header in API requests.</li>
+            <li>Be helpful and friendly to your fellow Sanitarium.io developers :-).</li>
+          </ul>
+      </div>
+  
+      <!-- Contact -->
+      <div class="docs-section" id="contact">
+        <h6 class="docs-header">Contact</h6>
+        <p>Have questions? Ideas? Notice something amiss with the data? Hit me up 
+          on <a href="https://twitter.com/StephenCathcart">Twitter</a> or drop me a 
+          line at <a href="mailto:steve@sanitarium.io">steve@sanitarium.io</a>.</p>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+            <div class="docs-section" id="privacy">
+            <h6 class="docs-header">Privacy</h6>
+            <p>
+              Sanitarium.io was a weekend project and is hosted on <a href="https://www.heroku.com/policy/security">Heroku</a>. 
+              All traffic is encrypted by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> 
+              which enables SSL/TLS. IP addresses are captured solely for the rate limiter. 
+              No data will ever be shared, except for internal usage for anonymous statistics.
+            </p>
+            </div>
+        </div>
+        <div class="six columns">
+            <div class="docs-section" id="legal">
+            <h6 class="docs-header">Legal disclaimer</h6>
+            <p>
+                Sanitarium.io is not affiliated with any motion picture corporation, any television 
+                corporation, parent, or affiliate corporation. All motion pictures and characters 
+                exposed by this API are the respective trademarks and copyrights of their owners.
+            </p>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    <script src="js/particles.min.js"></script>
+    <script src="js/jsonTree.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

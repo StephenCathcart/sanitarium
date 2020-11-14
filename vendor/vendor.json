@@ -1,0 +1,86 @@
+{
+	"comment": "",
+	"heroku": {
+		"goVersion": "go1.11",
+		"install": [
+			"./..."
+		],
+		"sync": true
+	},
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "CSPbwbyzqA6sfORicn4HFtIhF/c=",
+			"path": "github.com/davecgh/go-spew/spew",
+			"revision": "d8f796af33cc11cb798c1aaeb27a4ebc5099927d",
+			"revisionTime": "2018-08-30T19:11:22Z"
+		},
+		{
+			"checksumSHA1": "y2/wlPsexgYRaTmGgkEWBGNodJM=",
+			"path": "github.com/gchaincl/dotsql",
+			"revision": "f8e452f37f648d9ffee122eeb50bd986dff3c4ca",
+			"revisionTime": "2018-10-22T06:31:18Z"
+		},
+		{
+			"checksumSHA1": "6gZhzzBcr6PGzBonQfvkYl+4YqY=",
+			"path": "github.com/gorilla/mux",
+			"revision": "08e7f807d38d6a870193019bb439056118661505",
+			"revisionTime": "2019-01-08T14:29:30Z"
+		},
+		{
+			"checksumSHA1": "48fqnqznT/7gqJJ5MXLqNWLLlao=",
+			"path": "github.com/mattn/go-sqlite3",
+			"revision": "3fa1c550ffa69b74dc4bfd5109b4e218f32c87cf",
+			"revisionTime": "2019-01-04T16:17:12Z"
+		},
+		{
+			"checksumSHA1": "0H/VjT8w1CB702qWpbYMqr65Mf0=",
+			"path": "github.com/pkg/errors",
+			"revision": "ffb6e22f01932bf7ac35e0bad9be11f01d1c8685",
+			"revisionTime": "2019-01-09T06:16:28Z"
+		},
+		{
+			"checksumSHA1": "LuFv4/jlrmFNnDb/5SCSEPAM9vU=",
+			"path": "github.com/pmezard/go-difflib/difflib",
+			"revision": "5d4384ee4fb2527b0a1256a821ebfc92f91efefc",
+			"revisionTime": "2018-12-26T10:54:42Z"
+		},
+		{
+			"checksumSHA1": "qTNfPVU4Tz/JDMcSeL+k9HX2cV8=",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "363ebb24d041ccea8068222281c2e963e997b9dc",
+			"revisionTime": "2019-01-09T08:30:14Z"
+		},
+		{
+			"checksumSHA1": "3DvkGtpbJW8oXepRr3wYSs72LmQ=",
+			"path": "github.com/stretchr/testify/require",
+			"revision": "363ebb24d041ccea8068222281c2e963e997b9dc",
+			"revisionTime": "2019-01-09T08:30:14Z"
+		},
+		{
+			"checksumSHA1": "h0jI18evYNSKqJiBJRlXqXAmQa0=",
+			"path": "github.com/ulule/limiter",
+			"revision": "3b3ac78934d92d301e3ee36fb7a60157e0ee9536",
+			"revisionTime": "2018-08-03T12:33:03Z"
+		},
+		{
+			"checksumSHA1": "1HNbG3HxD3cv1sHqgY0olYzD1rA=",
+			"path": "github.com/ulule/limiter/drivers/middleware/stdlib",
+			"revision": "3b3ac78934d92d301e3ee36fb7a60157e0ee9536",
+			"revisionTime": "2018-08-03T12:33:03Z"
+		},
+		{
+			"checksumSHA1": "vuXVN2SXaRasZk/XnQmviFBsyGM=",
+			"path": "github.com/ulule/limiter/drivers/store/common",
+			"revision": "9981d0d7569ff97f69a1e6df20d6f7689f4858f2",
+			"revisionTime": "2017-10-09T16:03:04Z"
+		},
+		{
+			"checksumSHA1": "4Zs9IDhHW4QTMc0Fu/XlPeVjFa8=",
+			"path": "github.com/ulule/limiter/drivers/store/memory",
+			"revision": "9981d0d7569ff97f69a1e6df20d6f7689f4858f2",
+			"revisionTime": "2017-10-09T16:03:04Z"
+		}
+	],
+	"rootPath": "bitbucket.org/stephen_cathcart/sanitarium"
+}
