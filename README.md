@@ -1,7 +1,5 @@
 # Sanitarium.io
 
-[TOC]
-
 ## Outline
 
 Welcome to Sanitarium.io, a facility for holding the criminally insane. Our archive exposes a JSON API, enabling you to query hand-curated data on horror movie antagonists.
